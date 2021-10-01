@@ -8,7 +8,6 @@ namespace Task_02
         {
             Random random = new Random();
             int rand = random.Next(0, 101);
-            Console.WriteLine(rand);
             int[] mas = new int[100];
             for (int i = 0; i < 100; i++)
             {
@@ -30,10 +29,10 @@ namespace Task_02
                     }
                 }
             }            
-            for (int i = 0; i < 100; i++)
-            {
-                Console.Write(mas[i] + " ");
-            }
+            //for (int i = 0; i < 100; i++)
+            //{
+            //    Console.Write(mas[i] + " ");
+            //}
             Console.WriteLine();
             Console.Write(mas[rand]);
            
