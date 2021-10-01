@@ -33,7 +33,7 @@ namespace Task_02
             //{
             //    Console.Write(mas[i] + " ");
             //}
-            Console.WriteLine();
+            //Console.WriteLine();
             Console.Write(mas[rand]);
            
         }
