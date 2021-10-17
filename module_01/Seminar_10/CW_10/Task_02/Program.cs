@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Text;
-namespace Sem
+namespace Task_02
 {
     class Program
     {
