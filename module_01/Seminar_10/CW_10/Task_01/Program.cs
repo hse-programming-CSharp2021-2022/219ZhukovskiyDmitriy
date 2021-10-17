@@ -6,7 +6,7 @@ namespace Task_01
     {
         static string DigitToString(char digit)
         {
-            string[] digitString = {"ноль","один", "два", "три", "четыре", "пять", "шесть", "семь", "восемь", "девять" };
+            string[] digitString = { "ноль", "один", "два", "три", "четыре", "пять", "шесть", "семь", "восемь", "девять" };
             return digitString[digit - '0'];
         }
         static void Main(string[] args)
@@ -17,20 +17,20 @@ namespace Task_01
             do
             {
                 Console.WriteLine("Введите размер массива:");
-            }while(!int.TryParse(Console.ReadLine(),out n) && n>1);
+            } while (!int.TryParse(Console.ReadLine(), out n) && n > 1);
             do
             {
                 Console.WriteLine("Введите процент букв:");
             } while (!int.TryParse(Console.ReadLine(), out per) && per >= 0);
             string[] arr = new string[n];
             int nLetterAmount = (int)(n * per / 100.0);
-            for (int i =0;i<nLetterAmount;i++)
+            for (int i = 0; i < nLetterAmount; i++)
             {
                 arr[i] = ((char)random.Next('a', 'z' + 1)).ToString();
             }
-            for (int i= nLetterAmount;i<n;i++)
+            for (int i = nLetterAmount; i < n; i++)
             {
-                arr[i] = DigitToString((char)random.Next('0', '9'+1));
+                arr[i] = DigitToString((char)random.Next('0', '9' + 1));
             }
             Array.ForEach(arr, x => Console.Write(x + " "));
         }
