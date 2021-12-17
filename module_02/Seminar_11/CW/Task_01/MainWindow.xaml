@@ -1,0 +1,13 @@
+﻿<Window x:Class="CW.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CW"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid x:Name="Layout">
+        <Button Content="Button" HorizontalAlignment="Center" VerticalAlignment="Top" Height="55" Width="112" Click="Button_Click" Margin="70,70,0,0"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Center" Margin="45,294,0,0" Text="Тестовый текст" TextWrapping="Wrap" Visibility="Hidden" VerticalAlignment="Top" Width="120"/>
+    </Grid>
+</Window>
